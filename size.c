@@ -30,7 +30,7 @@ int main() {
 
     printf("sizeof(c): %ld\n", sizeof(c));
     printf("sizeof(i): %ld\n", sizeof(i));
-    printf("sizeof(c * 4000): %ld\n", sizeof(c * 4000));
+    printf("sizeof(c * 4000): %ld\n", sizeof(c * 4000)); // returns 4 because it gets converted to an int and no casting converts it back to char.
     printf("sizeof(c + 1): %ld\n", sizeof(c + 1));
     printf("sizeof(c2): %ld\n", sizeof(c2));
 
@@ -49,4 +49,7 @@ int main() {
 
     printf("s < 127: %d u < 127: %d\n", s > 127, u > 127);
 
+    printf("\n\n%ld\n", sizeof(int) + 1);
+
+    return 0;
 }
